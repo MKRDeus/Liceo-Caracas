@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard - Club Velocidad</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="menu-contain">
+                    <li class="item-contain-menu">
+                        <a id="btn-home"
+                            class="btn-menu"
+                            href="./login/index.html">
+                            Home
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <a class="logo">⚡ CLUB VELOCIDAD</a>
+            <nav>
+                <a href class="nav-item">Profesores</a>
+                <a href class="nav-item">Disciplinas</a>
+                <a href class="nav-item">Categorias</a>
+                <a href class="nav-item active">Eventos</a>
+                <a href class="nav-item">Estudiantes</a>
+                <a href class="nav-item">Atletas</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+
+            <div>
+                <div id="container-trainers-gestion">
+                    <div>
+                        <h2>Gestion de Entrenadores</h2>
+                    </div>
+                    <div>
+                        <button id="btn-add-trainer">Add</button>
+                    </div>
+                </div>
+                <div id="container-trainers">
+                    <ul>
+                        <li class="container-item-list-trainer">
+                            <div><input class="inputs-list-item" type="text"
+                                    readonly
+                                    value="Nombre"></div>
+                            <div><input class="inputs-list-item" type="text"
+                                    readonly
+                                    value="Apellidos"></div>
+                            <div><input class="inputs-list-item" type="text"
+                                    readonly
+                                    value="Disciplinas"></div>
+                            <div><button>Editar</button></div>
+                            <div><button>Eliminar</button></div>
+                        </li>
+
+                        <li class="container-item-list-trainer">
+                            <div><input class="inputs-list-item" type="text"
+                                    readonly
+                                    value="Nombre"></div>
+                            <div><input class="inputs-list-item" type="text"
+                                    readonly
+                                    value="Apellidos"></div>
+                            <div><input class="inputs-list-item" type="text"
+                                    readonly
+                                    value="Disciplinas"></div>
+                            <div><button>Editar</button></div>
+                            <div><button>Eliminar</button></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <header class="header-section">
+                <h1>Gestión de Disciplinas</h1>
+                <p>Panel de Control de Administrador</p>
+                <input type="text" id="searchInput" class="search-box"
+                    placeholder="Buscar atleta por nombre o categoría...">
+            </header>
+
+            <section class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Última Marca (100m)</th>
+                            <th>Progreso</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="atleta-body">
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>

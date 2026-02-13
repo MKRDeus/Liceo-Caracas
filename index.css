@@ -1,0 +1,89 @@
+/*Parte movil*/
+
+body {
+    width: 100%;
+    background-color: #d6d6d6;
+}
+
+header {
+    background-color: #000;
+}
+
+#menu-contain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item-contain-menu {
+    height: 5rem;
+    width: 7.5rem;
+}
+
+.btn-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-sub-menu {
+    color: #fff;
+}
+
+#btn-login {
+    color: #000;
+    background-color: lightblue;
+}
+
+#btn-signup {
+    color: #fff;
+    background-color: #00f;
+}
+
+#container-profile-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+#container-events-full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-boxes-events-full {
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventos-container {
+    height: 25rem;
+    width: 25rem;
+}
+
+.img-eventos {
+    width: 100%;
+
+}
+
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
